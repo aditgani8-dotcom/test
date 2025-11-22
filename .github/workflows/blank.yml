@@ -1,9 +1,10 @@
 name: Build and Release TGZ
 
 on:
+  workflow_dispatch:
   push:
     tags:
-      - 'v*'       # contoh: v1.0.0
+      - 'v*'
 
 jobs:
   build:
@@ -11,7 +12,6 @@ jobs:
 
     steps:
       - name: Checkout repo kamu
-      # checkout repo tempat action ini berada
         uses: actions/checkout@v4
 
       - name: Clone Xiaomi Kernel Source
