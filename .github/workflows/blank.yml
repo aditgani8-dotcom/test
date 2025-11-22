@@ -1,4 +1,4 @@
-name: Build and Release ZIP (Split 5GB)
+name: Build and Release ZIP (Split 1GB)
 
 on:
   workflow_dispatch:
@@ -18,12 +18,12 @@ jobs:
         run: |
           git clone -b ruby-s-oss https://github.com/MiCode/Xiaomi_Kernel_OpenSource.git kernel-source
 
-      - name: Install zip (jika belum ada)
+      - name: Install zip utility
         run: sudo apt-get update && sudo apt-get install -y zip
 
-      - name: Compress dan Split ZIP (5GB per part)
+      - name: Compress dan Split ZIP (1GB per part)
         run: |
-          zip -s 5g kernel_ruby-s-oss.zip -r kernel-source
+          zip -s 1g kernel_ruby-s-oss.zip -r kernel-source
 
       - name: List hasil split
         run: ls -lh
