@@ -69,7 +69,7 @@
     "kernelSource": {
       "device": "ruby",
       "vendor": "xiaomi",
-      "name": "MoonWake-KSU",
+      "name": "MoonWake-KSUN-unofficial-drivers",
       "defconfig": "ruby_defconfig",
       "extraConfig": "vendor/debug.config vendor/bbr.config vendor/noop.config vendor/lru.config vendor/kernelsu.config vendor/susfs.config",
       "repo": "https://github.com/RainyXeon/moonwake_kernel_xiaomi_ruby",
@@ -85,7 +85,7 @@
       "enable": true,
       "setupLink": "https://github.com/DR-KernelArchive/KernelSU-Unified/raw/susfs/kernel/setup.sh",
       "setupArg": "susfs",
-      "setupName": "KernelSU-Next",
+      "setupName": "KernelSU",
       "needPatch": false,
       "susfsLink": ""
     },
@@ -195,4 +195,4 @@
       "branch": "ruby_dev"
     }
   }
-    ]
+]
